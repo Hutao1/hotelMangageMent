@@ -1,0 +1,67 @@
+.header{
+    height: 130px;
+    background-color: aliceblue;
+}
+.logo{
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.tip{
+    line-height: 130px;
+    margin-left: 30px;
+    float: left;
+    font-weight: bolder;
+    color: blue;
+    letter-spacing:8px;
+}
+/*main start*/
+.main{
+    height: 400px;
+}
+.img_left{
+    height: 400px;
+    float: left;
+    width: 30%;
+    overflow: hidden;
+}
+.img_left>img{
+    height: 100%;
+}
+.content{
+    overflow: hidden;
+    height: 400px;
+    background: cornflowerblue;
+    position: relative;
+}
+.login{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login>p{
+    margin: 5px;
+}
+input{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+.enter,.exit{
+    width: 60px;
+    height: 30px;
+    background-color: crimson;
+    display: inline-block;
+    margin: 20px;
+    line-height: 30px;
+}

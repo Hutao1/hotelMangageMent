@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>首页</title>
 </head>
+<link rel="stylesheet" href="./style/base.css">
+<link rel="stylesheet" href="./style/index.css">
 <body>
-
+<div class="header">
+    <img src="./picture/logo.jpg" alt="图片未加载" class="logo">
+    <span class="tip">泰利宾馆客房管理信息系统</span>
+</div>
+<div class="main">
+    <div class="img_left"><img src="./picture/index.jpg" alt=""></div>
+    <div class="content">
+        <div class="login">
+            <p><span class="action">操作员账号:</span><input type="text" class="user"></p>
+            <p><span class="action">操作员密码:</span><input type="text" class="pwd"></p>
+            <p><span class="action">服务器时间:</span><input type="text" class="timer" readonly></p>
+            <span class="enter">登陆</span><span class="exit">关闭</span>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+<script src="./js/jquery-1.7.2.js"></script>
+<script src="./js/index.js"></script>
