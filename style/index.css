@@ -64,4 +64,5 @@ input{
     display: inline-block;
     margin: 20px;
     line-height: 30px;
+    cursor: pointer;
 }

@@ -3,6 +3,17 @@ $(function () {
     var timer = setInterval(()=>{
         getTime();
     },1000)
+    $(".enter").click(function () {
+        location.href = "main.html"
+    })
+    $(".exit").click(function () {
+        window.opener= null;
+        window.open("","_self");
+        window.close();
+        if(window){
+            window.location.href="about:blank";
+        }
+    })
 })
 
 function getTime() {
