@@ -3,6 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+.login{
+    position: absolute;
+    margin:0 auto;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login>p{
+    margin: 5px;
+}
+input{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    height: 23px;
+    font-size: 15px;
+}
+.enter,.exit{
+    width: 60px;
+    height: 30px;
+    background-color: crimson;
+    display: inline-block;
+    margin: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.action{
+	font-size: 27px;
+	color: #fff;
+}
+    </style>
 </head>
 <link rel="stylesheet" href="./style/base.css">
 <link rel="stylesheet" href="./style/main.css">
@@ -13,10 +47,12 @@
 </div>
 <div class="main">客房管理信息系统</div>
 <div class="content">
-    <input type="button" value="住房登记">
-    <input type="button" value="客房管理">
-    <input type="button" value="订单管理">
-    <input type="button" value="退出系统">
+    <div class="login">
+            <p><span class="action">操作员账号:</span><input type="text" class="user"></p>
+            <p><span class="action">操作员密码:</span><input type="text" class="pwd"></p>
+            <p><span class="action">服务器时间:</span><input type="text" class="timer" readonly></p>
+            <span class="enter">登陆</span><span class="exit">关闭</span>
+    </div>
 </div>
 </body>
 </html>

@@ -15,16 +15,23 @@ body{
 .tip{
     line-height: 130px;
     margin-left: 30px;
+    font-size: 50px;
     float: left;
     font-weight: bolder;
-    color: blue;
     letter-spacing:8px;
+    background: -webkit-radial-gradient(circle, rgb(23,54,93),green rgb(31,73,125)); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle, rgb(23,54,93), rgb(31,73,125)); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle, rgb(23,54,93), rgb(31,73,125)); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle, rgb(23,54,93), rgb(31,73,125)); /* 标准的语法（必须放在最后） */
+	-webkit-background-clip: text;
+    color: transparent;
 }
 /*main start*/
 .main{
     font-size: 80px;
     color: #fff;
     margin-left: 150px;
+    font-weight: 800;
 }
 .content{
     display: flex;
@@ -32,4 +39,5 @@ body{
 }
 .content>input{
     margin: 50px 20px;
+    height: 35px;
 }
